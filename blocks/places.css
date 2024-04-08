@@ -1,0 +1,221 @@
+.places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  background-color: #2a2c2f;
+}
+
+.places__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "city artist"
+    "image paragraph"
+    "image paragraph"
+    "button paragraph"
+    ". paragraph";
+
+  column-gap: 40px;
+  row-gap: 48px;
+  max-width: 958px;
+  margin: 0px auto 80px;
+}
+
+.places__card:last-child {
+  margin: 0px auto 92px;
+}
+
+.places__card_city {
+  grid-area: city;
+  max-width: 460px;
+  margin: auto auto 0px 0px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+
+  color: #ffffff;
+}
+
+.places__card_quote_span {
+  display: block;
+}
+
+.places__card_image {
+  grid-area: image;
+  width: 460px;
+  height: 460px;
+}
+
+.places__card_quote {
+  align-self: end;
+}
+
+.places__card_quote-title {
+  grid-area: artist;
+  max-width: 58px;
+  margin: auto auto 8px 0px;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+
+  color: #aaa;
+}
+
+.places__card_quote-text {
+  grid-area: artist;
+  margin: auto auto 0px 0px;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #fff;
+}
+
+.places__card_paragraph-text {
+  grid-area: paragraph;
+  max-width: 485px;
+  margin: 0px auto 0px 0px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 29px;
+
+  color: #fff;
+}
+
+.places__card_paragraph-span {
+  display: block;
+  margin-top: 25px;
+}
+
+.places__button {
+  grid-area: button;
+  width: 285px;
+  height: 48px;
+  margin: 0px auto 0px 0px;
+}
+
+.places__button_styles {
+  background-color: #0278fe;
+  border: none;
+  border-radius: 4px;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.places__button_styles:hover {
+  background-color: #0063d2;
+}
+
+/*.places__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 984px;
+  height: 660px;
+  margin: 0px auto 176px;
+
+  border: 1px solid red;
+}*/
+
+/*.places__card_left-content {
+  max-width: 460px;
+
+  border: 1px solid red;
+}
+
+.places__card_title {
+  max-width: 460px;
+  margin: 0px auto 48px 0px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+
+  color: #ffffff;
+}
+
+.places__card_title_span {
+  display: block;
+}
+
+.places__card_image {
+  width: 460px;
+  height: 460px;
+}
+
+.places__card_text {
+  max-width: 484px;
+  margin: 0px;
+  border: 1px solid red;
+}
+
+.places__card_quote {
+  margin: auto auto 48px 0px;
+
+  border: 1px solid red;
+}
+
+.places__card_quote-title {
+  max-width: 58px;
+  margin: auto auto 8px 0px;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+
+  color: #aaa;
+}
+
+.places__card_quote-text {
+  margin: 0px auto 0px 0px;
+
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #fff;
+}
+
+.places__card_paragraph {
+  max-width: 485px;
+  margin: 0px auto 0px 0px;
+
+  border: 1px solid red;
+}
+
+.places__card_paragraph-text {
+  margin: 0px auto 25px 0px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #fff;
+}
+*/

@@ -1,0 +1,333 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/gallery.css);
+@import url(../blocks/places.css);
+@import url(../blocks/footer.css);
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/vendor/fonts/Inter-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/vendor/fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/vendor/fonts/Inter-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/vendor/fonts/Inter-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/vendor/fonts/Inter-Black.woff2") format("woff2");
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+    max-width: 1024px;
+    margin: auto;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__logo {
+    width: 254px;
+    height: 65px;
+  }
+
+  .header__title {
+    max-width: 600px;
+    margin: 96px auto 0px;
+  }
+
+  .header__intro {
+    max-width: 720px;
+    margin: 32px auto 0px;
+  }
+
+  .header__image {
+    height: 100%;
+    width: 100%;
+    margin: 36px auto 0px;
+  }
+
+  .header__description {
+    max-width: 720px;
+    margin: 88px auto 0px;
+  }
+
+  .header__description_phrase {
+    margin: 58px auto 0px 0px;
+    max-width: 707px;
+  }
+
+  .header__description_quote {
+    margin: 0px 5px 0px auto;
+  }
+
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 16px;
+    column-gap: 16px;
+
+    margin: 90px auto 88px;
+
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .gallery__image {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .places__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "city artist"
+      "image paragraph"
+      "image paragraph"
+      "button paragraph"
+      ". paragraph";
+
+    column-gap: 28px;
+    row-gap: 46px;
+    max-width: 733px;
+    margin: 0px auto 72px;
+  }
+
+  .places__card_city {
+    grid-area: city;
+    max-width: 340px;
+    margin: auto auto 0px 0px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+
+    color: #ffffff;
+  }
+
+  .places__card_image {
+    grid-area: image;
+    width: 340px;
+    height: 340px;
+  }
+
+  .places__card_quote-text {
+    grid-area: artist;
+    margin: auto auto 0px 0px;
+    max-width: 365px;
+
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+
+    color: #fff;
+  }
+
+  .places__card_paragraph-text {
+    grid-area: paragraph;
+    max-width: 352px;
+    margin: 0px auto 0px 0px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 29px;
+
+    color: #fff;
+  }
+
+  .places__card_paragraph-span {
+    display: block;
+    margin-top: 14px;
+  }
+
+  .footer__content {
+    width: 100%;
+    height: 746px;
+    max-width: 1024px;
+  }
+
+  .footer__opacity-mask {
+    width: 100%;
+    height: 746px;
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .page {
+    max-width: 544px;
+    margin: auto;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__logo {
+    width: 188px;
+    height: 53px;
+  }
+
+  .header__title {
+    max-width: 220px;
+    margin: 49px auto 0px;
+
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .header__intro {
+    max-width: 288px;
+    margin: 16px auto 0px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__image {
+    height: 100%;
+    width: 100%;
+    margin: 40px auto 0px;
+  }
+
+  .header__description {
+    max-width: 288px;
+    margin: 64px auto 0px;
+  }
+
+  .header__description_title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .header__description_text-block {
+    max-width: 288px;
+  }
+
+  .header__description_phrase {
+    max-width: 288px;
+
+    line-height: 30px;
+  }
+
+  .header__description_quote {
+    margin: 10px 0px auto;
+
+    font-family: "Inter", Arial, sans-serif;
+  }
+
+  .header__description_text {
+    max-width: 288px;
+  }
+
+  .gallery__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 12px;
+
+    margin: 90px auto 62px;
+
+    width: 100%;
+    max-width: 288px;
+  }
+
+  .places__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "city"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+
+    row-gap: 30px;
+    max-width: 288px;
+    margin: 0px auto 50px;
+  }
+
+  .places__card_city {
+    grid-area: city;
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .places__card_quote {
+    max-width: 288px;
+  }
+
+  .places__card_image {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+  }
+
+  .places__card:last-child {
+    margin: 0px auto 64px;
+  }
+
+  .footer__content {
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+  }
+
+  .footer__opacity-mask {
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+  }
+
+  .footer__title {
+    margin: 46px auto auto;
+
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .footer__paragraph {
+    margin: 16px auto 16px;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #fff;
+  }
+
+  .footer__button {
+    margin: 0px auto 45px;
+  }
+}
