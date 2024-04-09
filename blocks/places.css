@@ -86,6 +86,7 @@
   grid-area: paragraph;
   max-width: 485px;
   margin: 0px auto 0px 0px;
+
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -107,19 +108,23 @@
   margin: 0px auto 0px 0px;
 }
 
-.places__button_styles {
+.places__button-styles {
+  padding: 13px 20px;
   background-color: #0278fe;
   border: none;
   border-radius: 4px;
+  display: inline-block;
 
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 22px;
+  text-decoration: none;
+
   color: #ffffff;
 }
 
-.places__button_styles:hover {
+.places__button-styles:hover {
   background-color: #0063d2;
 }
