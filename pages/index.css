@@ -75,12 +75,12 @@
     margin: 88px auto 0px;
   }
 
-  .header__description_phrase {
+  .header__description-phrase {
     margin: 58px auto 0px 0px;
     max-width: 707px;
   }
 
-  .header__description_quote {
+  .header__description-quote {
     margin: 0px 5px 0px auto;
   }
 
@@ -226,28 +226,28 @@
     margin: 64px auto 0px;
   }
 
-  .header__description_title {
+  .header__description-title {
     font-size: 32px;
     line-height: 35px;
   }
 
-  .header__description_text-block {
+  .header__description-textblock {
     max-width: 288px;
   }
 
-  .header__description_phrase {
+  .header__description-phrase {
     max-width: 288px;
 
     line-height: 30px;
   }
 
-  .header__description_quote {
+  .header__description-quote {
     margin: 10px 0px auto;
 
     font-family: "Inter", Arial, sans-serif;
   }
 
-  .header__description_text {
+  .header__description-text {
     max-width: 288px;
   }
 
